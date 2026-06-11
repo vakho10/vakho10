@@ -4,35 +4,30 @@ hide:
   - toc
 ---
 
-<div class="hero" markdown>
+<div class="profile-layout" markdown>
 
-<img src="https://github.com/vakho10.png" alt="Vakho10" class="hero-avatar">
+<div class="profile-sidebar" markdown>
 
-# Hi, I'm Vakho10 👋
+<img src="https://github.com/vakho10.png" alt="Vakho10" class="profile-avatar">
 
-<p class="hero-tagline">
-I am a software developer. I build digital tools by writing logical and coherent
+# Vakho10
+
+<p class="profile-tagline">
+I'm a software developer. I build digital tools by writing logical and coherent
 statements — and I like sharing those artworks with the world.
 </p>
 
 [:fontawesome-brands-github: GitHub](https://github.com/vakho10){ .md-button .md-button--primary }
 [:fontawesome-solid-envelope: Email](mailto:vakho10@gmail.com){ .md-button }
 
+---
+
+- :material-tools: I work across the stack with **Kotlin, Java, Spring Boot, TypeScript, Angular, and Electron**
+- :material-chat: Ask me about **desktop apps, JVM tooling, and game localization**
+
 </div>
 
----
-
-## About me
-
-Programming is an art of creating digital tools by writing logical and coherent
-statements. Let's share these artworks with the world to make it a little bit
-more hospitable place by providing bits of encouragement and motivation.
-
-- 🔭 Currently working on **GEO GTA 3** — a full Georgian localization of Grand Theft Auto III
-- 🛠️ I work across the stack with **Kotlin, Java, Spring Boot, TypeScript, Angular, and Electron**
-- 💬 Ask me about **desktop apps, JVM tooling, and game localization**
-
----
+<div class="profile-main" markdown>
 
 ## Projects
 
@@ -105,3 +100,7 @@ more hospitable place by providing bits of encouragement and motivation.
 </div>
 
 [See all my repositories on GitHub :octicons-arrow-right-24:](https://github.com/vakho10?tab=repositories){ .md-button }
+
+</div>
+
+</div>

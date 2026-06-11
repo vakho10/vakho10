@@ -1,33 +1,88 @@
-/* ---- Homepage hero ---- */
-.hero {
-  text-align: center;
-  padding: 2.5rem 1rem 1rem;
+/* ---- Homepage: GitHub-profile two-column layout ---- */
+.profile-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
 }
 
-.hero-avatar {
-  width: 160px;
-  height: 160px;
+/* Left sidebar: avatar, name, info */
+.profile-sidebar {
+  flex: 0 0 16rem;
+  position: sticky;
+  top: 5rem;
+}
+
+.profile-avatar {
+  width: 100%;
+  max-width: 16rem;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  border: 4px solid var(--md-primary-fg-color);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border: 1px solid var(--md-default-fg-color--lightest);
   object-fit: cover;
 }
 
-.hero h1 {
+.profile-sidebar h1 {
   margin: 1rem 0 0.25rem;
   font-weight: 700;
+  font-size: 1.6rem;
 }
 
-.hero-tagline {
-  max-width: 36rem;
-  margin: 0 auto 1.5rem;
+.profile-tagline {
+  margin: 0 0 1rem;
   color: var(--md-default-fg-color--light);
-  font-size: 1.05rem;
   line-height: 1.6;
 }
 
-.hero .md-button {
-  margin: 0.25rem 0.3rem;
+.profile-sidebar .md-button {
+  margin: 0.2rem 0.3rem 0.2rem 0;
+}
+
+.profile-sidebar hr {
+  margin: 1.25rem 0;
+}
+
+.profile-sidebar ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.profile-sidebar ul li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Right column: projects */
+.profile-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.profile-main > h2:first-child {
+  margin-top: 0;
+}
+
+/* Stack on narrow screens */
+@media screen and (max-width: 59.98em) {
+  .profile-layout {
+    flex-direction: column;
+  }
+
+  .profile-sidebar {
+    position: static;
+    flex: 1 1 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-avatar {
+    max-width: 12rem;
+  }
+
+  .profile-sidebar ul {
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 /* ---- Project cards: keep the GitHub-pinned feel ---- */
